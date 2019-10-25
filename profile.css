@@ -29,10 +29,17 @@ a{
 }
 .column {
     float: left;
-    width: 33.33%;
     padding: 10px;
-    height: 670px;
+    height: 736px;
+    width: 33.33%
 }
+.column1 {
+    padding: 10px;
+    height: 736px;
+    padding: 10px;
+    width: 33%
+}
+
 
 #colorColumn{
     background-color: rgb(68, 182, 235);
@@ -42,9 +49,11 @@ a{
 
 #otherColumn{
     border: 1px dotted rgb(68, 182, 235);
-    background-color: aliceblue
+    background-color: aliceblue;
 }
-
+.row{
+    display: flex;
+}
 .row:after {
     content: "";
     display: table;
@@ -68,18 +77,18 @@ h2{
       opacity: 1;
     }
 }
-.scene {
-    margin:20% auto;
 }
 .wrapper {
     transform: rotateX(45deg);
     transform-style: preserve-3d;
 }
-.ball{
+
+.ball:hover{
     list-style: none;
     transform-style:  preserve-3d;
-    animation: roundandround 5s 1s infinite linear;
+    animation: roundandround 2s 1s infinite linear;
 }
+
 .ball .ring {
     border-style: none;
     border-radius: 50%;
@@ -87,7 +96,6 @@ h2{
     animation: show 0.75s forwards ease-in-out;
 }
 
-#JS{
-    float: right
+#images{
+    height:180px;
 }
-

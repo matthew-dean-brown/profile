@@ -10,20 +10,28 @@
     <title>Profile</title>
 </head>
 <body>
-    <div id="header">
-        <div style="display:flex; height: 180px">
-            <img id="pic" src='Matthew.jpg'>
-            <h1 id="name">Matthew Brown</h1>
-        </div>
+    <div style="display: table;">
+	    <div id="header">
+	        <div style="display:flex; height: 180px">
+	            <img id="pic" src='images/Matthew.jpg'>
+	            <h1 id="name">Matthew Brown</h1>
+	    </div>
+
+	    <div style="margin-left: 60%; display: flex;">
+		    <a href="mailto:mattrewbrown@gmail.com">
+				<i class="fa fa-envelope-o" style="font-size:36px; color: white;"></i>
+			</a>
+	    	<a href="https://github.com/matthew-dean-brown"><span style="font-size: 25px; margin-left: 15%">GitHub</span></a>
+		</div>
     </div>
-    <div class="row">
+    <div id="col" class="row">
         <div id="otherColumn" class="column">
             <div class="inner-wrapper">
-                    <h2 style="border-bottom: 3px dotted rgb(68, 182, 235)">About Me</h2>
-                    <p>
-                        Hi, my name is Matthew Brown.I am 19 years old and am currently a student at CoGrammar until November. I am knowlegdeable and experienced in different programming languages (see below). I am very enthusiastic in learning new coding languages as well as looking forward to grow.
-                    </p>
-                    <div class="scene">
+                <h2 style="border-bottom: 3px dotted rgb(68, 182, 235)">About Me</h2>
+                <p>
+                    Hi, my name is Matthew Brown. I am 19 years old and am currently a student at CoGrammar until the end of October. I am knowlegdeable and experienced in different programming languages (see below). I am very enthusiastic in learning new coding languages as well as looking forward to grow.
+                </p>
+                <div class="scene">
                         Programming Languages
                         <div class="wrapper">
                             <ul class="ball">
@@ -41,30 +49,40 @@
                                 <li class="ring">PHP</li>
                             </ul>
                         </div>
-                    </div>
+                </div>
             </div>
         </div>
-        <div id="colorColumn" class="column">
+        <div id="colorColumn" class="column1">
             <h2>Projects</h2>
-            <h3><a href="https://rock-paper-scissors-mbrown.herokuapp.com/" target="_blank">The Rock Paper Scissors Game</a></h3>
-            <h3><a href="https://calculator-mbrown.herokuapp.com/" target="_blank">Calculator</a></h3>
-            <h3><a href="https://to-do-list-mbrown.herokuapp.com" target="_blank">To-do List</a></h3>
-
+            <div>
+	            <a style="margin-left: 5%" href="https://rock-paper-scissors-mbrown.herokuapp.com/" target="_blank">
+	            	The Rock Paper Scissors Game
+	            	<img id="images" src="images/rock-paper-scissors.png">	
+	            </a>
+	            <a style="margin-left: 10%" href="https://calculator-mbrown.herokuapp.com/" target="_blank">
+	            	Calculator
+	            	<br>
+	            	<img id="images" src="images/calculator.png" >
+	            </a>
+	        </div>
+	       	<br>  
+	       	<div>      
+	            <a href="https://to-do-list-mbrown.herokuapp.com" target="_blank">
+	            	To-do List<br>
+	            	<img id="images" src="images/to-do-list.png">
+	        	</a>
+        	</div>
         </div>
-        <div id="colorColumn" class="column">
-            <h2>Contact Details</h2>
-            <h5 style="border-bottom: 1px solid aliceblue"><a href="mailto:mattrewbrown@gmail.com">Email: mattrewbrown@gmail.com</a></h5>
-            <h5><a href="https://github.com/MatthewDeanBrown" target="_blank">Github</a></h5>
+        <div id="colorColumn" class="column1">
+            <h2>Education</h2><br>
+            <ul>Highschool
+            	<li>Matriculated in 2018</li>
+            </ul>
+            <ul>Coding Bootcamp
+            	<li>I learned Computer languages such as Python and Javascript. We went in-depth with Javascript where we were taught to code for the frontend and Backend in Javascript(React and Node.js). Other than coding languages, I also learned leadership and self-development skills.</li>
+            </ul>
+        </div>
         </div>
     </div>
 </body>
-</html>     
-
-
-
-
-
-
-
-
-
+</html>
